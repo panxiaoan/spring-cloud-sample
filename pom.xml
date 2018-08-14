@@ -3,11 +3,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-    <parent>
+	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.13.RELEASE</version>
-		<relativePath/>
+		<relativePath />
 	</parent>
 
 	<groupId>com.panxiaoan.springcloud.sample</groupId>
@@ -20,7 +20,7 @@
 
 	<modules>
 		<module>eureka-server</module>
-        <module>order-service</module>
+		<module>order-service</module>
 	</modules>
 
 	<developers>
@@ -63,14 +63,14 @@
 	<dependencyManagement>
 		<dependencies>
 
-            <!-- Spring Cloud POM -->
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
+			<!-- Spring Cloud POM -->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
 
 			<!-- Spring Cloud Sample Modules -->
 			<dependency>
@@ -83,12 +83,12 @@
 				<artifactId>zull-server</artifactId>
 				<version>${revision}</version>
 			</dependency>
-            <dependency>
+			<dependency>
 				<groupId>com.panxiaoan.springcloud.sample</groupId>
 				<artifactId>order-service</artifactId>
 				<version>${revision}</version>
 			</dependency>
-            <dependency>
+			<dependency>
 				<groupId>com.panxiaoan.springcloud.sample</groupId>
 				<artifactId>member-service</artifactId>
 				<version>${revision}</version>
@@ -105,7 +105,7 @@
 					<artifactId>spring-boot-maven-plugin</artifactId>
 					<version>${spring-boot.version}</version>
 				</plugin>
-				
+
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
