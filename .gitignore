@@ -5,6 +5,7 @@ temp
 www
 deploy
 gwt-unitCache
+.vscode
 
 ### STS ###
 .apt_generated
