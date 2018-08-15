@@ -3,7 +3,7 @@ server:
    
 spring:
     application: 
-        name: EurekaServer
+        name: eureka-server
 
 # Eureka 注册中心访问配置
 eureka:

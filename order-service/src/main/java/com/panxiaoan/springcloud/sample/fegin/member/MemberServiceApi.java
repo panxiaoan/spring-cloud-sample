@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @author <a href="mailto:xiaoan.pan@qq.com">潘小安</a>
  * @since 2018-08-15 10:01
  */
-@FeignClient(name = "MemberService")
+@FeignClient(name = "member-service")
 public interface MemberServiceApi {
 
 	@RequestMapping(value = "/api/member/getAllMember", method = RequestMethod.POST)
