@@ -7,7 +7,7 @@ spring:
 
 eureka:
    instance:
-       hostname: peer
+       hostname: 192.168.246.146
        prefer-ip-address: true
    client:
        healthcheck: 
