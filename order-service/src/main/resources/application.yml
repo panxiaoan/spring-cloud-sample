@@ -13,4 +13,4 @@ eureka:
        healthcheck: 
             enabled: true
        serviceUrl:
-           defaultZone: http://localhost:4000/eureka/
+           defaultZone: http://${eureka.instance.hostname}:4000/eureka/
