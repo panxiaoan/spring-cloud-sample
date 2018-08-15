@@ -1,0 +1,21 @@
+server:
+   port: 4001
+   
+spring:
+   application:
+       name: zull-server
+
+eureka:
+   instance:
+       hostname: localhost
+   client:
+       healthcheck: 
+            enabled: true
+       serviceUrl:
+           defaultZone: http://localhost:4000/eureka/
+
+zuul:
+   routes:
+       order-service: /orderservice/**
+       member-service: /memberservice/**
+       

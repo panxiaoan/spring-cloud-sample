@@ -10,11 +10,11 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<artifactId>zull-server</artifactId>
+	<artifactId>zuul-server</artifactId>
 	<packaging>jar</packaging>
 
-	<name>zull-server</name>
-	<description>Spring Cloud Sample ::: Zull Server</description>
+	<name>zuul-server</name>
+	<description>Spring Cloud Sample ::: Zuul Server</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -22,18 +22,24 @@
 	</properties>
 
 	<dependencies>
+		<!-- Spring Cloud -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-feign</artifactId>
+			<artifactId>spring-cloud-starter-zuul</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-hystrix</artifactId>
+		</dependency>
+		
+		<!-- Spring Boot -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
 		<!-- Test -->
