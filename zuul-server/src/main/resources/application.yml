@@ -8,11 +8,12 @@ spring:
 eureka:
    instance:
        hostname: localhost
+       prefer-ip-address: true
    client:
        healthcheck: 
             enabled: true
        serviceUrl:
-           defaultZone: http://localhost:4000/eureka/
+           defaultZone: http://${eureka.instance.hostname}:4000/eureka/
 
 zuul:
    routes:
