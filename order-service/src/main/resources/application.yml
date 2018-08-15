@@ -7,7 +7,7 @@ spring:
 
 eureka:
    instance:
-       hostname: localhost
+       hostname: 192.168.246.146
        prefer-ip-address: true
    client:
        healthcheck: 
