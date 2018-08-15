@@ -8,7 +8,7 @@ spring:
 # Eureka 注册中心访问配置
 eureka:
    instance:
-       hostname: localhost
+       hostname: peer
    client:
        registerWithEureka: false
        fetchRegistry: false
