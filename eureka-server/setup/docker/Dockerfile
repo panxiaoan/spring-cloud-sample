@@ -1,4 +1,4 @@
-FROM index.tenxcloud.com/tenxcloud/java:8
+FROM java:8
 MAINTAINER panxiaoan(xiaoan.pan@qq.com)
 COPY eureka-server.jar /home
 WORKDIR /home
