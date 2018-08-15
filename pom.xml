@@ -21,7 +21,7 @@
 	<modules>
 		<!-- 服务注册与发现中心 -->
 		<module>eureka-server</module>
-        <!-- 路由网关服务 -->
+		<!-- 路由网关服务 -->
 		<module>zuul-server</module>
 		<!-- 订单服务 -->
 		<module>order-service</module>
@@ -76,28 +76,6 @@
 				<version>${spring-cloud.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
-			</dependency>
-
-			<!-- Spring Cloud Sample Modules -->
-			<dependency>
-				<groupId>com.panxiaoan.springcloud.sample</groupId>
-				<artifactId>eureka-server</artifactId>
-				<version>${revision}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.panxiaoan.springcloud.sample</groupId>
-				<artifactId>zull-server</artifactId>
-				<version>${revision}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.panxiaoan.springcloud.sample</groupId>
-				<artifactId>order-service</artifactId>
-				<version>${revision}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.panxiaoan.springcloud.sample</groupId>
-				<artifactId>member-service</artifactId>
-				<version>${revision}</version>
 			</dependency>
 
 		</dependencies>
