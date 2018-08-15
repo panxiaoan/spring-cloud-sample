@@ -19,8 +19,14 @@
 	<description>Spring Cloud Sample ::: Parent</description>
 
 	<modules>
+		<!-- 服务注册与发现中心 -->
 		<module>eureka-server</module>
+        <!-- 路由网关服务 -->
+		<module>zull-server</module>
+		<!-- 订单服务 -->
 		<module>order-service</module>
+		<!-- 会员服务 -->
+		<module>member-service</module>
 	</modules>
 
 	<developers>

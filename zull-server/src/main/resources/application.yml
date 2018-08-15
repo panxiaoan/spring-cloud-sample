@@ -1,11 +1,6 @@
 server:
    port: 4000
-   
-spring:
-    application: 
-        name: EurekaServer
 
-# Eureka 注册中心访问配置
 eureka:
    instance:
        hostname: localhost

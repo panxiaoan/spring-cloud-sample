@@ -1,9 +1,9 @@
 server:
-   port: 9081
+   port: 9080
    
 spring:
     application: 
-        name: OrderService
+        name: MemberService
 
 eureka:
    instance:

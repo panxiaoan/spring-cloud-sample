@@ -10,11 +10,11 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<artifactId>eureka-server</artifactId>
+	<artifactId>zull-server</artifactId>
 	<packaging>jar</packaging>
 
-	<name>eureka-server</name>
-	<description>Spring Cloud Sample ::: Eureka Server</description>
+	<name>zull-server</name>
+	<description>Spring Cloud Sample ::: Zull Server</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -22,10 +22,18 @@
 	</properties>
 
 	<dependencies>
-		<!-- Spring Cloud -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka-server</artifactId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-feign</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
 		<!-- Test -->
