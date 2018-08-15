@@ -12,7 +12,7 @@
   - 应用发布与更新（Jenkins + Docker Registry + K8S）
 
 #### 模块介绍
-- eureka-server: 服务注册与发现 http://localhost:4001
+- eureka-server: 服务注册与发现 http://localhost:4000
 - zuul-server: 路由网关 http://localhost:4001
 - member-service: 会员服务 http://localhost:9080/api/member/getAllMember
 - order-service: 订单服务 http://localhost:9081/api/order/showAllMember
