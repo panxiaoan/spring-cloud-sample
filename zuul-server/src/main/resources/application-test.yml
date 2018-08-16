@@ -19,4 +19,5 @@ zuul:
    routes:
        order-service: /orderservice/**
        member-service: /memberservice/**
+       thorn6-m6: /m6/**
        
