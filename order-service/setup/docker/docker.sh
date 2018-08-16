@@ -38,7 +38,7 @@ else
     docker rmi -f $IMAGE_ID
 fi
 
-echo ">>> docker build……
+echo ">>> docker build……"
 docker build --build-arg app=$APP_NAME . -t $IMAGES_NAME:$BUILD_ID
 
 echo ">>> docker run……"
