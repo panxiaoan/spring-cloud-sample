@@ -1,0 +1,22 @@
+server:
+   port: 4001
+   
+spring:
+   application:
+       name: zull-server
+
+eureka:
+   instance:
+       hostname: 192.168.246.146
+       prefer-ip-address: true
+   client:
+       healthcheck: 
+            enabled: true
+       serviceUrl:
+           defaultZone: http://${eureka.instance.hostname}:4000/eureka/
+
+zuul:
+   routes:
+       order-service: /orderservice/**
+       member-service: /memberservice/**
+       
