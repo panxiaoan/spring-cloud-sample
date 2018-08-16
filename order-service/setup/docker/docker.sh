@@ -42,4 +42,4 @@ echo ">>> docker build……
 docker build --build-arg app=$APP_NAME . -t $IMAGES_NAME:$BUILD_ID
 
 echo ">>> docker run……"
-docker run -d -m 300M --memory-swap -1 -e JAVA_OPTS='-server -Xms256m -Xmx256m' "SPRING_PROFILES_ACTIVE=test" -p $PORT:$PORT --name $CONTAINER_NAME $IMAGES_NAME:$BUILD_ID
+docker run -d -m 300M --memory-swap -1 -e JAVA_OPTS='-server -Xms256m -Xmx256m -Dspring.profiles.active=dev' -p $PORT:$PORT --name $CONTAINER_NAME $IMAGES_NAME:$BUILD_ID
