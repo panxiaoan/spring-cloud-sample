@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.panxiaoan.springcloud.sample.fegin.member.MemberServiceApi;
+import com.panxiaoan.springcloud.sample.feign.member.MemberServiceApi;
 
 /** 
  * @author <a href="mailto:xiaoan.pan@qq.com">潘小安</a> 

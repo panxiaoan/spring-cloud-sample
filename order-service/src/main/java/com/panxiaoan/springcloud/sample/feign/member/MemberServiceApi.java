@@ -1,4 +1,4 @@
-package com.panxiaoan.springcloud.sample.fegin.member;
+package com.panxiaoan.springcloud.sample.feign.member;
 
 import java.util.List;
 

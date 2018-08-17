@@ -14,8 +14,15 @@ eureka:
             enabled: true
        serviceUrl:
            defaultZone: http://${eureka.instance.hostname}:4000/eureka/
+           
+ribbon:
+   ReadTimeout: 3000
+   ConnectTimeout: 3000
 
 zuul:
+   host:
+        connect-timeout-millis: 3000
+        socket-timeout-millis: 3000
    routes:
        order-service: /orderservice/**
        member-service: /memberservice/**
