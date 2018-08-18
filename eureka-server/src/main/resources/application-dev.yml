@@ -1,20 +1,16 @@
 server:
-   port: 4000
-   
+  port: 4000
 spring:
-    application: 
-        name: eureka-server
-
-# Eureka 注册中心访问配置
+  application:
+    name: eureka-server
 eureka:
-   instance:
-       hostname: localhost
-   client:
-       registerWithEureka: false
-       fetchRegistry: false
-       serviceUrl:
-           defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-           
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 management:
-   security: 
-       enabled: false
+  security:
+    enabled: false

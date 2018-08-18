@@ -23,6 +23,8 @@
 		<module>eureka-server</module>
 		<!-- 路由网关服务 -->
 		<module>zuul-server</module>
+		<!-- 分布式链路追踪服务 -->
+		<module>zipkin-server</module>
 		<!-- 订单服务 -->
 		<module>order-service</module>
 		<!-- 会员服务 -->

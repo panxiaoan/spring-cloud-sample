@@ -1,28 +1,30 @@
 server:
-   port: 4001
-   
+  port: 4001
 spring:
-   application:
-       name: zull-server
-
+  application:
+    name: zuul-server
+  zipkin:
+    enabled: true
+    baseUrl: http://localhost:9411
+  sleuth:
+    sampler:
+      percentage: 1.0
 eureka:
-   instance:
-       hostname: 192.168.246.146
-       prefer-ip-address: true
-   client:
-       healthcheck: 
-            enabled: true
-       serviceUrl:
-           defaultZone: http://${eureka.instance.hostname}:4000/eureka/
-
+  instance:
+    hostname: 192.168.246.146
+    prefer-ip-address: true
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:4000/eureka/
 ribbon:
-   ReadTimeout: 3000
-   ConnectTimeout: 3000
-
+  ReadTimeout: 3000
+  ConnectTimeout: 3000
 zuul:
-   host:
-        connect-timeout-millis: 3000
-        socket-timeout-millis: 3000
-   routes:
-       order-service: /orderservice/**
-       member-service: /memberservice/**
+  host:
+    connect-timeout-millis: 3000
+    socket-timeout-millis: 3000
+  routes:
+    order-service: /orderservice/**
+    member-service: /memberservice/**

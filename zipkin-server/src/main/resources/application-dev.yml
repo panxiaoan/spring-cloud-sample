@@ -1,14 +1,10 @@
 server:
-  port: 9081
+  port: 9411
 spring:
   application:
-    name: order-service
+    name: zipkin-server
   zipkin:
-    enabled: true
-    baseUrl: http://localhost:9411
-  sleuth:
-    sampler:
-      percentage: 1.0
+    enabled: false
 eureka:
   instance:
     hostname: localhost
