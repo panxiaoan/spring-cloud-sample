@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2018-08-15 09:55
  */
 @RestController
-@RequestMapping(value = "/api/member", method = RequestMethod.POST)
+@RequestMapping(value = "/member", method = RequestMethod.POST)
 public class MemberController {
 	
 	private static Logger logger = LoggerFactory.getLogger(MemberController.class);

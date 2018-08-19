@@ -1,16 +1,18 @@
-server:
-  port: 9411
 spring:
   application:
-    name: zipkin-server
-  zipkin:
-    enabled: false
+    name: member-service
+  profiles:
+    active: dev
+  cloud:
+    config:
+      fail-fast: true
+      discovery:
+        enabled: true
+        serviceId: config-server
 eureka:
   instance:
     hostname: localhost
     prefer-ip-address: true
   client:
-    healthcheck:
-      enabled: true
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:4000/eureka/

@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.13.RELEASE</version>
+		<version>2.0.1.RELEASE</version>
 		<relativePath />
 	</parent>
 
@@ -21,10 +21,12 @@
 	<modules>
 		<!-- 服务注册与发现中心 -->
 		<module>eureka-server</module>
+		<!-- 分布式配置服务 -->
+		<module>config-server</module>
 		<!-- 路由网关服务 -->
 		<module>zuul-server</module>
-		<!-- 分布式链路追踪服务 -->
-		<module>zipkin-server</module>
+		<!-- 断路器\监控面板\聚合监控数据 -->
+		<module>turbine-server</module>
 		<!-- 订单服务 -->
 		<module>order-service</module>
 		<!-- 会员服务 -->
@@ -51,8 +53,8 @@
 
 		<revision>1.0.0</revision>
 
-		<spring-boot.version>1.5.13.RELEASE</spring-boot.version>
-		<spring-cloud.version>Edgware.SR4</spring-cloud.version>
+		<spring-boot.version>2.0.1.RELEASE</spring-boot.version>
+		<spring-cloud.version>Finchley.SR1</spring-cloud.version>
 
 		<maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
 		<maven-jar-plugin.version>2.4</maven-jar-plugin.version>

@@ -1,0 +1,16 @@
+server:
+  port: 4003
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+turbine:
+  appConfig: member-service,order-service
+  clusterNameExpression: new String("default")
+  combineHostPort: true
+management:
+  port: 4022
+  endpoints:
+    web:
+      exposure:
+        include: '*'

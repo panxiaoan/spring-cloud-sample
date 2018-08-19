@@ -1,20 +1,26 @@
 server:
   port: 9080
-spring:
-  application:
-    name: member-service
-  zipkin:
-    enabled: true
-    baseUrl: http://localhost:9411
-  sleuth:
-    sampler:
-      percentage: 1.0
 eureka:
-  instance:
-    hostname: localhost
-    prefer-ip-address: true
   client:
     healthcheck:
       enabled: true
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:4000/eureka/
+spring:
+  zipkin:
+    baseUrl: http://localhost:9411
+  sleuth:
+    web:
+      client:
+        enabled: true
+    sampler:
+      percentage: 1.0
+ribbon:
+  hystrix:
+    enabled: true
+feign:
+  hystrix:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

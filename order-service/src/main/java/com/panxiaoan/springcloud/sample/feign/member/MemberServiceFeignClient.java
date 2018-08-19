@@ -2,7 +2,7 @@ package com.panxiaoan.springcloud.sample.feign.member;
 
 import java.util.List;
 
-import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @author <a href="mailto:xiaoan.pan@qq.com">潘小安</a>
  * @since 2018-08-15 10:01
  */
-@FeignClient(name = "member-service")
-public interface MemberServiceApi {
+@FeignClient(name = "member-service", fallback = MemberServiceFeignClientFallback.class)
+public interface MemberServiceFeignClient {
 
-	@RequestMapping(value = "/api/member/getAllMember", method = RequestMethod.POST)
+	@RequestMapping(value = "/member/getAllMember", method = RequestMethod.POST)
 	List<String> getAllMember();
 }

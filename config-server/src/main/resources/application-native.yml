@@ -1,0 +1,26 @@
+server:
+  port: 4001
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: classpath:/shared
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:4000/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  security:
+    enabled: false
