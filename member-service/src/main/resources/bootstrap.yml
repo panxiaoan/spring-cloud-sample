@@ -1,3 +1,4 @@
+---
 spring:
   application:
     name: member-service
@@ -9,6 +10,14 @@ spring:
       discovery:
         enabled: true
         serviceId: config-server
+---
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  profiles:
+    active: test
 eureka:
   instance:
     hostname: localhost
